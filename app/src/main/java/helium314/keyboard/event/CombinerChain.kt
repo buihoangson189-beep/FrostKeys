@@ -42,6 +42,8 @@ class CombinerChain(initialText: String, combiningSpec: String) {
         if (combiningSpec == "hangul")
             mCombiners.add(HangulCombiner())
         else if (combiningSpec == "bn_khipro")
+           else if (combiningSpec == "telex")
+       mCombiners.add(TelexCombiner())
             mCombiners.add(BnKhiproCombiner())
     }
 
